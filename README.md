@@ -14,7 +14,7 @@ Streams audio from input device to a room where receivers can play that
 
 ## Starting the app
 - Run ```npm start``` to start the web application
-- Run ```peer --port 3001``` in another terminal
+- Run ```peerjs --port 3001``` in another terminal
 
 ## Opening the web interface
 - The app will show the ip address when it will start. Go to the address using a browser.
