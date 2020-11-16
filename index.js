@@ -3,6 +3,7 @@ const { v4 } = require('uuid');
 const app = express();
 const server = require('http').Server(app);
 const io = require('socket.io')(server);
+const ip = require('ip');
 
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
@@ -42,4 +43,5 @@ io.on('connection', socket => {
     });
 });
 
+console.log(`Running at ${ip.address()}:3000`);
 server.listen(3000);
